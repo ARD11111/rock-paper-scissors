@@ -1,8 +1,8 @@
-
+// Computer choice
 function getComputerChoice() {
   let computerChoice = "";
   let randomNum = Math.floor(Math.random() * 10);
-  // console.log(randomNum);
+
   if (randomNum >= 0 && randomNum <= 3) {
     computerChoice = "rock";
   } else if (randomNum > 3 && randomNum <= 6) {
@@ -13,31 +13,18 @@ function getComputerChoice() {
   console.log(`Computer's choice: ${computerChoice}`);
   return computerChoice;
 }
-
-
-
-
+// Human Choice
 function getHumanChoice() {
   let humanChoice = prompt("Enter your choice: Rock,Paper or Scissors");
   console.log(`Your Choice: ${humanChoice}`);
   return humanChoice;
 }
 
-
-
 let humanScore = 0;
 let computerScore = 0;
-
-// for(let i=0; i<5; i++){
-//   const humanSelection = getHumanChoice();
-//   const computerSelection = getComputerChoice();
-// }
-
-
-// console.log(`Your Score: ${humanScore}`);
-// console.log(`Computer Score: ${computerScore}`);
 let winner = "";
 
+// logic
 function playGame() {
 
   function playRound(humanChoice, computerChoice) {
